@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ithuvia Blog</title>
     <link>https://www.ithuvia.com/blog/</link>
     <description>Monthly, practical insights on AI in Higher Education — less hype, more how-to.</description>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 29 Dec 2025 10:57:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 19:04:51 +0000</lastBuildDate>
     <generator>Static RSS for GitHub Pages (Ithuvia)</generator>
-    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
+
+    <image>
+      <url>https://www.ithuvia.com/assets/logo.png</url>
+      <title>Ithuvia Blog</title>
+      <link>https://www.ithuvia.com/blog/</link>
+    </image>
 
     <item>
       <title>Welcome to Ithuvia: The Human Side of AI in Higher Education</title>
