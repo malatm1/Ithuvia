@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ithuvia Blog</title>
+    <link>https://www.ithuvia.com/blog/</link>
+    <description>Monthly, practical insights on AI in Higher Education — less hype, more how-to.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 29 Dec 2025 10:57:50 +0000</lastBuildDate>
+    <generator>Static RSS for GitHub Pages (Ithuvia)</generator>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Welcome to Ithuvia: The Human Side of AI in Higher Education</title>
+      <link>https://www.ithuvia.com/blog/posts/00-welcome.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/posts/00-welcome.html</guid>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[Ithuvia exists to close the widening gap between fast-moving AI tools and slow-moving institutional policy. This post clarifies what Ithuvia is (and is not), and sets a simple editorial promise: less hype, more how-to. Expect concise, action-oriented monthly briefs for students, faculty, and academic leaders.]]></description>
+    </item>
+
+  </channel>
+</rss>
