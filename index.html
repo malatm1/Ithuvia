@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ithuvia | The Future of Connection</title>
+    <title>Ithuvia | The Future is Real-Time</title>
     <style>
         :root {
             --bg-color: #050505;
             --text-primary: #ffffff;
             --text-secondary: #a1a1a1;
-            --accent-color: #3b82f6; /* Modern Electric Blue */
-            --glass: rgba(255, 255, 255, 0.05);
+            --accent-color: #3b82f6; 
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: var(--font-main);
         }
 
         body {
@@ -29,20 +29,20 @@
             justify-content: center;
             min-height: 100vh;
             overflow: hidden;
-            padding: 20px;
+            padding: 24px;
         }
 
-        /* Subtle background glow for that 'AI' feel */
+        /* Ambient background glow */
         .glow {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 300px;
-            height: 300px;
+            width: 40vw;
+            height: 40vw;
             background: var(--accent-color);
-            filter: blur(120px);
-            opacity: 0.15;
+            filter: blur(150px);
+            opacity: 0.12;
             z-index: -1;
         }
 
@@ -50,27 +50,31 @@
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 30px;
+            max-width: 1200px;
+            padding: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            z-index: 10;
         }
 
         .logo {
             font-weight: 800;
-            font-size: 1.5rem;
-            letter-spacing: -1px;
+            font-size: 1.6rem;
+            letter-spacing: -1.5px;
             text-transform: lowercase;
+            cursor: default;
         }
 
         .nav-link {
             text-decoration: none;
             color: var(--text-primary);
-            font-weight: 500;
+            font-weight: 600;
             font-size: 0.9rem;
-            opacity: 0.8;
-            transition: opacity 0.3s;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         .nav-link:hover {
@@ -79,59 +83,112 @@
 
         main {
             text-align: center;
-            max-width: 800px;
+            max-width: 900px;
+            z-index: 5;
+        }
+
+        /* Typewriter Headline */
+        .headline-wrapper {
+            display: inline-block;
+            margin-bottom: 24px;
         }
 
         h1 {
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
-            line-height: 1.1;
+            font-size: clamp(2rem, 8vw, 4.8rem);
+            line-height: 1.05;
             font-weight: 800;
-            margin-bottom: 24px;
-            letter-spacing: -0.04em;
+            letter-spacing: -0.05em;
+            overflow: hidden; 
+            white-space: nowrap; 
+            border-right: 4px solid var(--accent-color); 
+            width: 0;
+            animation: 
+                typing 2s steps(30, end) forwards,
+                blink 0.8s step-end infinite;
         }
 
         .subtext {
-            font-size: clamp(1rem, 4vw, 1.25rem);
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
             color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 40px;
-            max-width: 600px;
+            line-height: 1.5;
+            margin-bottom: 48px;
+            max-width: 680px;
             margin-left: auto;
             margin-right: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlide 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation-delay: 2.2s;
         }
 
+        /* CTA Button Styling */
         .cta-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlide 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation-delay: 2.8s;
         }
 
         .btn-primary {
             background-color: var(--text-primary);
             color: var(--bg-color);
-            padding: 16px 32px;
-            border-radius: 50px;
+            padding: 20px 42px;
+            border-radius: 100px;
             text-decoration: none;
             font-weight: 700;
             font-size: 1.1rem;
-            transition: transform 0.2s, background-color 0.2s;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .btn-primary:hover {
-            transform: scale(1.05);
-            background-color: #f0f0f0;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
+            background-color: #f8f8f8;
         }
 
-        @media (max-width: 600px) {
+        /* Keyframes */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: var(--accent-color) }
+        }
+
+        @keyframes fadeInSlide {
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            body {
+                justify-content: flex-start;
+                padding-top: 15vh;
+            }
             h1 {
-                text-align: left;
+                white-space: normal;
+                width: auto;
+                border-right: none;
+                animation: fadeInSlide 1s ease forwards;
+                text-align: center;
             }
             .subtext {
-                text-align: left;
+                animation-delay: 0.5s;
+                text-align: center;
             }
             .cta-container {
-                align-items: flex-start;
+                animation-delay: 1s;
+                text-align: center;
+            }
+            nav {
+                padding: 25px;
             }
         }
     </style>
@@ -146,7 +203,10 @@
     </nav>
 
     <main>
-        <h1>Email is where work goes to die.</h1>
+        <div class="headline-wrapper">
+            <h1>Email is where work goes to die.</h1>
+        </div>
+        
         <p class="subtext">
             AI-driven social ecosystems are where the future is being built in real-time. 
             Ithuvia is a social network, not a mailing list.
