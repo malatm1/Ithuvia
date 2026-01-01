@@ -3,46 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ithuvia | The Future is Real-Time</title>
+    <title>Ithuvia | The 2026 Protocol</title>
     <style>
         :root {
             --bg-color: #050505;
             --text-primary: #ffffff;
             --text-secondary: #a1a1a1;
             --accent-color: #3b82f6; 
-            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --card-bg: #111111;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: var(--font-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            overflow: hidden;
-            padding: 24px;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        /* Ambient background glow */
+        /* Ambient Glow */
         .glow {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 40vw;
-            height: 40vw;
+            width: 60vw;
+            height: 60vw;
             background: var(--accent-color);
-            filter: blur(150px);
-            opacity: 0.12;
+            filter: blur(160px);
+            opacity: 0.08;
             z-index: -1;
         }
 
@@ -50,146 +45,107 @@
             position: fixed;
             top: 0;
             width: 100%;
-            max-width: 1200px;
-            padding: 40px;
+            padding: 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            z-index: 10;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 100;
         }
 
-        .logo {
+        .logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -1px; text-transform: lowercase; }
+        .nav-links a { color: var(--text-primary); text-decoration: none; margin-left: 20px; font-size: 0.9rem; font-weight: 500; opacity: 0.7; transition: 0.3s; }
+        .nav-links a:hover { opacity: 1; }
+
+        section {
+            min-height: 100vh;
+            padding: 100px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero { text-align: center; }
+        h1 {
+            font-size: clamp(2.2rem, 7vw, 4.5rem);
+            line-height: 1.1;
             font-weight: 800;
-            font-size: 1.6rem;
-            letter-spacing: -1.5px;
-            text-transform: lowercase;
-            cursor: default;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: var(--text-primary);
-            font-weight: 600;
-            font-size: 0.9rem;
-            opacity: 0.6;
-            transition: opacity 0.3s ease;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .nav-link:hover {
-            opacity: 1;
-        }
-
-        main {
-            text-align: center;
-            max-width: 900px;
-            z-index: 5;
-        }
-
-        /* Typewriter Headline */
-        .headline-wrapper {
-            display: inline-block;
+            letter-spacing: -0.04em;
             margin-bottom: 24px;
         }
 
-        h1 {
-            font-size: clamp(2rem, 8vw, 4.8rem);
-            line-height: 1.05;
-            font-weight: 800;
-            letter-spacing: -0.05em;
-            overflow: hidden; 
-            white-space: nowrap; 
-            border-right: 4px solid var(--accent-color); 
-            width: 0;
-            animation: 
-                typing 2s steps(30, end) forwards,
-                blink 0.8s step-end infinite;
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid var(--accent-color);
+            margin: 0 auto;
+            animation: typing 2s steps(30, end) forwards, blink 0.8s step-end infinite;
         }
 
         .subtext {
             font-size: clamp(1.1rem, 3vw, 1.4rem);
             color: var(--text-secondary);
-            line-height: 1.5;
-            margin-bottom: 48px;
-            max-width: 680px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 700px;
+            margin: 30px auto;
             opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInSlide 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-            animation-delay: 2.2s;
+            animation: fadeIn 1s ease forwards 2.2s;
         }
 
-        /* CTA Button Styling */
-        .cta-container {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInSlide 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-            animation-delay: 2.8s;
-        }
-
-        .btn-primary {
-            background-color: var(--text-primary);
-            color: var(--bg-color);
-            padding: 20px 42px;
-            border-radius: 100px;
+        /* Cards & Buttons */
+        .btn {
+            padding: 18px 36px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            transition: 0.3s;
             display: inline-block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin: 10px;
+        }
+        .btn-primary { background: white; color: black; }
+        .btn-secondary { border: 1px solid rgba(255,255,255,0.2); color: white; }
+        .btn:hover { transform: translateY(-3px); }
+
+        /* Content Sections */
+        .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 40px; text-align: center; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
         }
 
-        .btn-primary:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
-            background-color: #f8f8f8;
+        .card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+        .card:hover { border-color: var(--accent-color); }
+        .card h3 { margin-bottom: 15px; font-size: 1.5rem; }
+        .card p { color: var(--text-secondary); margin-bottom: 20px; }
+
+        .social-shoutout {
+            text-align: center;
+            background: linear-gradient(180deg, transparent, #111);
+            width: 100vw;
+            padding: 100px 24px;
         }
 
-        /* Keyframes */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
+        /* Animations */
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink { from, to { border-color: transparent } 50% { border-color: var(--accent-color) } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-        @keyframes blink {
-            from, to { border-color: transparent }
-            50% { border-color: var(--accent-color) }
-        }
-
-        @keyframes fadeInSlide {
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
-            body {
-                justify-content: flex-start;
-                padding-top: 15vh;
-            }
-            h1 {
-                white-space: normal;
-                width: auto;
-                border-right: none;
-                animation: fadeInSlide 1s ease forwards;
-                text-align: center;
-            }
-            .subtext {
-                animation-delay: 0.5s;
-                text-align: center;
-            }
-            .cta-container {
-                animation-delay: 1s;
-                text-align: center;
-            }
-            nav {
-                padding: 25px;
-            }
+            .typewriter { white-space: normal; width: auto; border: none; animation: fadeIn 1s forwards; }
+            section { padding: 60px 20px; }
         }
     </style>
 </head>
@@ -199,23 +155,73 @@
 
     <nav>
         <div class="logo">ithuvia</div>
-        <a href="#" class="nav-link">Manifesto</a>
+        <div class="nav-links">
+            <a href="#protocol">2026 Protocol</a>
+            <a href="#blog">Insights</a>
+            <a href="#movement">Join Us</a>
+        </div>
     </nav>
 
-    <main>
-        <div class="headline-wrapper">
+    <section class="hero">
+        <div class="typewriter">
             <h1>Email is where work goes to die.</h1>
         </div>
-        
         <p class="subtext">
             AI-driven social ecosystems are where the future is being built in real-time. 
             Ithuvia is a social network, not a mailing list.
         </p>
-        
-        <div class="cta-container">
-            <a href="#" class="btn-primary">Join the Inner Circle</a>
+        <div style="opacity: 0; animation: fadeIn 1s ease forwards 2.8s;">
+            <a href="#movement" class="btn btn-primary">Join the Inner Circle</a>
+            <a href="#protocol" class="btn btn-secondary">The 2026 Protocol</a>
         </div>
-    </main>
+    </section>
+
+    <section id="protocol">
+        <h2 class="section-title">The 2026 Protocol</h2>
+        <div class="card" style="text-align: center; max-width: 600px;">
+            <p>Download our framework on navigating the shift from legacy communication to AI-integrated social environments.</p>
+            <a href="assets/ithuvia-protocol-2026.pdf" class="btn btn-primary" download>Download Free PDF</a>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2 class="section-title">Latest Insights</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Digital De-aging</h3>
+                <p>Why modern platforms must pivot to keep up with Gen Z's real-time expectations.</p>
+                <a href="#" class="nav-link" style="color: var(--accent-color); text-decoration: none; font-weight: bold;">Read More &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>AI as a Peer</h3>
+                <p>The transition from AI as a tool to AI as a collaborative node in your social network.</p>
+                <a href="#" class="nav-link" style="color: var(--accent-color); text-decoration: none; font-weight: bold;">Read More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="movement" class="social-shoutout">
+        <h2 class="section-title">Join the Movement</h2>
+        <p class="subtext" style="opacity: 1; transform: none; margin-bottom: 40px;">
+            We are building in public. Follow the journey and join the conversation where it's actually happening.
+        </p>
+        <div class="grid" style="max-width: 800px; margin: 0 auto;">
+            <div class="card">
+                <h3>Follow the Vision</h3>
+                <p>Stay updated with <strong>@mmalatj1</strong> for daily insights into the Ithuvia build.</p>
+                <a href="https://x.com/mmalatj1" target="_blank" class="btn btn-secondary">Follow @mmalatj1</a>
+            </div>
+            <div class="card">
+                <h3>The Community</h3>
+                <p>Be part of the founding members of the Ithuvia ecosystem.</p>
+                <a href="#" class="btn btn-primary">Reserve Your Handle</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 50px; text-align: center; color: #444; font-size: 0.8rem;">
+        &copy; 2026 Ithuvia Social Ecosystem. All rights reserved.
+    </footer>
 
 </body>
 </html>
