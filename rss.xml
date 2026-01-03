@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ithuvia Blog</title>
+    <title>Ithuvia | Inside Intel</title>
     <link>https://www.ithuvia.com/blog/</link>
-    <description>Monthly, practical insights on AI in Higher Education — less hype, more how-to.</description>
+    <description>Mission Control for student founders. Tactical AI workflows, side-hustle blueprints, and the 2026 Sovereign Protocol.</description>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 29 Dec 2025 19:04:51 +0000</lastBuildDate>
-    <generator>Static RSS for GitHub Pages (Ithuvia)</generator>
+    <lastBuildDate>Sat, 03 Jan 2026 12:00:00 +0000</lastBuildDate>
+    <generator>Static RSS for GitHub Pages (Ithuvia-Sovereign-Engine)</generator>
     <atom:link href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
 
     <image>
       <url>https://www.ithuvia.com/assets/logo.png</url>
-      <title>Ithuvia Blog</title>
+      <title>Ithuvia | Inside Intel</title>
       <link>https://www.ithuvia.com/blog/</link>
     </image>
 
     <item>
-      <title>Welcome to Ithuvia: The Human Side of AI in Higher Education</title>
-      <link>https://www.ithuvia.com/blog/posts/00-welcome.html</link>
-      <guid isPermaLink="true">https://www.ithuvia.com/blog/posts/00-welcome.html</guid>
-      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ithuvia exists to close the widening gap between fast-moving AI tools and slow-moving institutional policy. This post clarifies what Ithuvia is (and is not), and sets a simple editorial promise: less hype, more how-to. Expect concise, action-oriented monthly briefs for students, faculty, and academic leaders.]]></description>
+      <title>Mission 001: The Inaugural Manifesto — Why Ithuvia is a War Room, Not a Newsletter</title>
+      <link>https://www.ithuvia.com/blog/manifesto.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/manifesto.html</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The university OS is obsolete. Ithuvia exists to bridge the gap between static curriculum and the 2026 AI economy. This briefing decrypts our "Mission Control" philosophy and the transition from Passive Consumer to Sovereign Creator. Stop scrolling. Start shipping.]]></description>
     </item>
 
   </channel>
