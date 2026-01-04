@@ -58,10 +58,9 @@
       position: fixed; top: 0; left: 0; animation: scanline 10s linear infinite; z-index: 9998; pointer-events: none;
     }
     .typing-effect {
-      display: inline-block; overflow: hidden; border-right: .15em solid #d97706; white-space: nowrap;
-      animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+      display: inline-block; overflow: hidden; border-right: .15em solid #d97706; 
+      animation: blink-caret .75s step-end infinite;
     }
-    @keyframes typing { from { width: 0 } to { width: 100% } }
     @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #d97706 } }
   </style>
 </head>
@@ -95,7 +94,7 @@
     </div>
 
     <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-8 leading-tight tracking-tight">
-      <span class="typing-effect">Welcome to the Underground Network: Why the "Old Handbook" is Broken.</span>
+      <span class="typing-effect uppercase">Welcome to the Underground Network: Why the "Old Handbook" is Broken.</span>
     </h1>
 
     <article class="prose prose-invert prose-lg max-w-none text-slate-400">
@@ -144,7 +143,7 @@
         <h3 class="font-bold text-white mb-2 flex items-center">
           <span class="mr-2 text-amber-500">🎓</span> For Students
         </h3>
-        <p class="text-sm text-slate-400">You will find clear boundaries, ethical workflows, and strategies to hack your degree without losing your soul.</p>
+        <p class="text-sm text-slate-400 leading-relaxed">You will find clear boundaries, ethical workflows, and strategies to hack your degree without losing your soul.</p>
       </div>
 
       <div class="bg-slate-950 border border-amber-600/30 rounded-xl p-8 mt-12 relative overflow-hidden shadow-2xl group">
