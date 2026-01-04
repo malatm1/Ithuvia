@@ -1,0 +1,19 @@
+# Prerequisites
+node_modules/
+.env
+.env*.local
+.DS_Store
+dist/
+build/
+
+# Sector-Specific Ignores
+landing/node_modules/
+apps/mission-control/node_modules/
+
+# The Vault (Supabase junk)
+.supabase/
+supabase/.temp/
+
+# Tactical Backups
+*.bak
+backup/

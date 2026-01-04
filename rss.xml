@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ithuvia | Inside Intel</title>
+    <link>https://www.ithuvia.com/blog/</link>
+    <description>Mission Control for student founders. Tactical AI workflows, side-hustle blueprints, and the 2026 Sovereign Protocol.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 03 Jan 2026 12:00:00 +0000</lastBuildDate>
+    <generator>Static RSS for GitHub Pages (Ithuvia-Sovereign-Engine)</generator>
+    <atom:link href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
+
+    <image>
+      <url>https://www.ithuvia.com/assets/logo.png</url>
+      <title>Ithuvia | Inside Intel</title>
+      <link>https://www.ithuvia.com/blog/</link>
+    </image>
+
+    <item>
+      <title>Mission 001: The Inaugural Manifesto — Why Ithuvia is a War Room, Not a Newsletter</title>
+      <link>https://www.ithuvia.com/blog/manifesto.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/manifesto.html</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[The university OS is obsolete. Ithuvia exists to bridge the gap between static curriculum and the 2026 AI economy. This briefing decrypts our "Mission Control" philosophy and the transition from Passive Consumer to Sovereign Creator. Stop scrolling. Start shipping.]]></description>
+    </item>
+
+  </channel>
+</rss>
