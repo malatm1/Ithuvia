@@ -64,17 +64,6 @@
       pointer-events: none;
     }
 
-    /* SENTIENT GRID CELLS */
-    .active-cell {
-      position: fixed;
-      width: 50px; height: 50px;
-      background-color: rgba(217, 119, 6, 0.15);
-      border: 1px solid rgba(217, 119, 6, 0.3);
-      z-index: -1;
-      pointer-events: none;
-      transition: opacity 1s ease-out;
-    }
-
     /* PARTICLE ENGINE CSS */
     .particle {
       position: fixed;
@@ -125,7 +114,6 @@
   
   <div class="nebula-bg"></div>
   <div class="grid-bg"></div>
-  <div id="grid-active-layer"></div>
   <div class="scanline-bar"></div>
   <div id="particle-container"></div>
 
@@ -276,9 +264,8 @@
         particle.style.animationDelay = `-${delay}s`;
         container.appendChild(particle);
       }
-  
 
-      // 3. TELEMETRY SIDEBAR ENGINE
+      // 2. TELEMETRY SIDEBAR ENGINE
       const yAxisDisplay = document.getElementById('telemetry-y');
       const timeDisplay = document.getElementById('telemetry-time');
 
@@ -293,7 +280,7 @@
       }, 1000);
 
 
-      // 4. DECRYPTION SCRAMBLE ENGINE
+      // 3. DECRYPTION SCRAMBLE ENGINE
       class TextScramble {
         constructor(el) {
           this.el = el;
