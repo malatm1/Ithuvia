@@ -276,37 +276,7 @@
         particle.style.animationDelay = `-${delay}s`;
         container.appendChild(particle);
       }
-
-      // 2. SENTIENT GRID ENGINE (Random Cells Lighting Up)
-      const gridLayer = document.getElementById('grid-active-layer');
-      const gridSize = 50; // Matches CSS background-size
-      
-      function spawnGridCell() {
-        if (gridLayer.children.length > 15) return;
-        const cell = document.createElement('div');
-        cell.classList.add('active-cell');
-        
-        const x = Math.floor(Math.random() * (window.innerWidth / gridSize)) * gridSize;
-        const y = Math.floor(Math.random() * (window.innerHeight / gridSize)) * gridSize;
-        
-        cell.style.left = `${x}px`;
-        cell.style.top = `${y}px`;
-        cell.style.opacity = '0'; 
-        
-        gridLayer.appendChild(cell);
-
-        requestAnimationFrame(() => {
-          cell.style.opacity = '1';
-        });
-
-        setTimeout(() => {
-          cell.style.opacity = '0';
-          setTimeout(() => cell.remove(), 1000); 
-        }, Math.random() * 2000 + 1000);
-      }
-
-      setInterval(spawnGridCell, 400);
-
+  
 
       // 3. TELEMETRY SIDEBAR ENGINE
       const yAxisDisplay = document.getElementById('telemetry-y');
