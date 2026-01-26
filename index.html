@@ -44,13 +44,11 @@
     body { font-family: 'Inter', sans-serif; overflow-x: hidden; background-color: #020617; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
 
-    /* NEBULA BACKGROUND (Static Base) */
     .nebula-bg {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;
       background: radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.15), transparent 70%);
     }
 
-    /* GRID OVERLAY (Base) */
     .grid-bg {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
       background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
@@ -60,10 +58,9 @@
       pointer-events: none;
     }
 
-    /* PARTICLE ENGINE CSS */
     .particle {
       position: fixed;
-      background: #d97706; /* Amber-600 */
+      background: #d97706; 
       border-radius: 50%;
       pointer-events: none;
       z-index: 0;
@@ -77,7 +74,6 @@
       100% { transform: translateY(-10vh) scale(1); opacity: 0; }
     }
 
-    /* SCANLINE */
     .scanline-bar {
       width: 100%; height: 100px;
       background: linear-gradient(to bottom, transparent, rgba(217, 119, 6, 0.03), transparent);
@@ -85,20 +81,12 @@
     }
     @keyframes scanline { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
 
-    /* TYPOGRAPHY FX */
-    .typing-effect {
-      display: inline; border-right: .15em solid #d97706; 
-      animation: blink-caret .75s step-end infinite;
-    }
-    @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #d97706 } }
-    
     .breathing-glow { animation: breathe 6s ease-in-out infinite; }
     @keyframes breathe {
       0%, 100% { opacity: 0.2; transform: scale(1); }
       50% { opacity: 0.5; transform: scale(1.2); }
     }
 
-    /* SYSTEM PULSE (Navbar) */
     .system-pulse {
       width: 8px; height: 8px; background-color: #d97706; border-radius: 50%;
       box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.7);
@@ -162,22 +150,22 @@
 
       <div class="text-base md:text-lg mb-10 max-w-2xl mx-auto text-slate-400 leading-relaxed text-center">
         <p class="mb-6">
-          Ithuvia is the <strong>Mission Control</strong> for the next 1 million Sovereign Creators in the Global South.
+          Ithuvia is the <strong>Mission Control</strong> for the next 1 million Sovereign Creators across the <strong>African Continent</strong>.
         </p>
         <p class="font-mono text-sm text-slate-500 tracking-tighter">
-          // ACCESS GRANTED: iKgwebo Platform v1.0 Online. <br>
-          // MISSION PROTOCOL: Secure the 'Student AI Charter' via the Vault.
+          // ACCESS GRANTED: African iKgwebo Engine Online. <br>
+          // MISSION PROTOCOL: Powering Africa's Informal Economy Through AI.
         </p>
       </div>
 
       <div class="flex flex-col items-center justify-center space-y-4">
-        <a href="https://ikgwebo.ithuvia.com"
+        <a href="https://ikgwebo.ithuvia.com/enrol-business"
            target="_blank"
            class="bg-amber-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-500 transition shadow-[0_0_25px_rgba(217,119,6,0.4)] hover:shadow-[0_0_35px_rgba(217,119,6,0.6)] transform hover:-translate-y-1 border border-amber-500 font-mono text-sm uppercase tracking-widest">
-          &gt; Enter_iKgwebo_Terminal
+          &gt; Initialise_African_Mission
         </a>
         <p class="text-sm text-slate-500 font-medium uppercase tracking-[0.2em] mt-4">
-          Ditch the Newsletter. <span class="text-amber-500">Join the Inner Circle.</span>
+          AfCFTA ALIGNED // <span class="text-amber-500">Intra-Africa Sovereign Trade.</span>
         </p>
       </div>
     </div>
@@ -194,22 +182,29 @@
       
       <div class="prose prose-invert prose-lg mx-auto text-slate-300">
         <p class="lead text-xl font-semibold text-slate-100 mb-6 text-center">
-          Ithuvia is a phased tactical operation to reclaim your sovereignty.
+          Ithuvia is a phased tactical operation to reclaim African sovereignty.
         </p>
         
         <div class="grid md:grid-cols-2 gap-6 my-8">
             <div class="bg-slate-900/50 p-6 rounded-lg border border-slate-700">
                 <h3 class="text-amber-500 font-mono font-bold text-sm uppercase tracking-widest mb-2">Phase 1: The Intel (Active)</h3>
                 <p class="text-sm text-slate-400">
-                    We operate as the <strong>Sovereign Intel Network</strong>. We distribute the "Shadow Syllabus"—tactical workflows for Students and Graduates.
+                    We operate as the <strong>Sovereign Intel Network</strong>. We distribute the "Shadow Syllabus"—tactical workflows for Creators across the continent.
                 </p>
             </div>
             <div class="bg-slate-900/50 p-6 rounded-lg border border-amber-600/50 shadow-[0_0_20px_rgba(217,119,6,0.1)]">
                 <h3 class="text-amber-500 font-mono font-bold text-sm uppercase tracking-widest mb-2">Phase 2: iKgwebo (Operational)</h3>
-                <p class="text-sm text-slate-300">
-                    The <strong>Sovereign Business Engine</strong> is live. A tactical dashboard built for the creator who owns their code, data, and future.
+                <p class="text-sm text-slate-300 mb-6">
+                    Connecting <strong>African micro-enterprises</strong> with Sovereign Architects via the 2026 Protocol.
                 </p>
-                <a href="https://ikgwebo.ithuvia.com" target="_blank" class="inline-block mt-4 text-[10px] font-mono text-amber-500 hover:text-white transition uppercase tracking-[0.2em] underline underline-offset-4">Initialise Dashboard ↗</a>
+                <div class="flex flex-col space-y-3">
+                    <a href="https://ikgwebo.ithuvia.com/enrol-business" target="_blank" class="w-full text-center py-2 bg-amber-600/10 border border-amber-600 text-amber-500 font-mono text-[10px] uppercase tracking-widest hover:bg-amber-600 hover:text-white transition">
+                        [ SMME_INITIALISE_MISSION ]
+                    </a>
+                    <a href="https://ikgwebo.ithuvia.com/register" target="_blank" class="w-full text-center py-2 border border-slate-700 text-slate-400 font-mono text-[10px] uppercase tracking-widest hover:border-amber-500 hover:text-amber-500 transition">
+                        [ ARCHITECT_JOIN_ROSTER ]
+                    </a>
+                </div>
             </div>
         </div>
       </div>
@@ -267,7 +262,6 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       
-      // 1. PARTICLE ENGINE
       const container = document.getElementById('particle-container');
       const particleCount = 20; 
 
@@ -286,7 +280,6 @@
         container.appendChild(particle);
       }
 
-      // 2. TELEMETRY SIDEBAR ENGINE
       const yAxisDisplay = document.getElementById('telemetry-y');
       const timeDisplay = document.getElementById('telemetry-time');
 
@@ -300,7 +293,6 @@
         if(timeDisplay) timeDisplay.innerText = now.toLocaleTimeString('en-GB', { hour12: false });
       }, 1000);
 
-      // 3. DECRYPTION SCRAMBLE ENGINE
       class TextScramble {
         constructor(el) {
           this.el = el;
@@ -352,7 +344,6 @@
         }
       }
 
-      // Observer for Scramble
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
