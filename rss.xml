@@ -5,7 +5,7 @@
     <link>https://www.ithuvia.com/blog/</link>
     <description>Mission Control for student founders. Tactical AI workflows, side-hustle blueprints, and the 2026 Sovereign Protocol.</description>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 03 Jan 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 09:00:00 +0200</lastBuildDate>
     <generator>Static RSS for GitHub Pages (Ithuvia-Sovereign-Engine)</generator>
     <atom:link href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -16,10 +16,26 @@
     </image>
 
     <item>
+      <title>Mission 003: Proof of Work — The Resume is Dead</title>
+      <link>https://www.ithuvia.com/blog/march.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/march.html</guid>
+      <pubDate>Sun, 01 Mar 2026 09:00:00 +0200</pubDate>
+      <description><![CDATA[The Intel phase is closed. The Execution phase is online. As of 09h00 SAST, the iKgwebo Engine is operational. Learn the protocol to turn Shadow Syllabus skills into deployable, verifiable assets that prove your value in a market that no longer trusts degrees. Stop claiming. Start proving.]]></description>
+    </item>
+
+    <item>
+      <title>Mission 002: The Shadow Syllabus — Audit Your Degree with AI</title>
+      <link>https://www.ithuvia.com/blog/february.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/february.html</guid>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0200</pubDate>
+      <description><![CDATA[The university accreditation model is broken. 18 months for a degree update is an eternity in the age of Agentic AI. Use this step-by-step prompt engineering protocol to identify the lethal gaps in your curriculum and build your own high-velocity Shadow Syllabus.]]></description>
+    </item>
+
+    <item>
       <title>Mission 001: The Inaugural Manifesto — Why Ithuvia is a War Room, Not a Newsletter</title>
       <link>https://www.ithuvia.com/blog/manifesto.html</link>
       <guid isPermaLink="true">https://www.ithuvia.com/blog/manifesto.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0200</pubDate>
       <description><![CDATA[The university OS is obsolete. Ithuvia exists to bridge the gap between static curriculum and the 2026 AI economy. This briefing decrypts our "Mission Control" philosophy and the transition from Passive Consumer to Sovereign Creator. Stop scrolling. Start shipping.]]></description>
     </item>
 
