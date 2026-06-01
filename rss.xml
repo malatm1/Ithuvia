@@ -5,7 +5,7 @@
     <link>https://www.ithuvia.com/blog/</link>
     <description>Mission Control for student founders. Tactical AI workflows, side-hustle blueprints, and the 2026 Sovereign Protocol.</description>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 01 Mar 2026 09:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0200</lastBuildDate>
     <generator>Static RSS for GitHub Pages (Ithuvia-Sovereign-Engine)</generator>
     <atom:link href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -14,6 +14,22 @@
       <title>Ithuvia | Inside Intel</title>
       <link>https://www.ithuvia.com/blog/</link>
     </image>
+
+    <item>
+      <title>Mission 005: The Ghost Economy — Value Chains Beyond the Grid</title>
+      <link>https://www.ithuvia.com/blog/june.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/june.html</guid>
+      <pubDate>Mon, 01 Jun 2026 09:00:00 +0200</pubDate>
+      <description><![CDATA[Standard economic metrics look at formal corporate ledgers and see nothing. The sovereign creator looks at the informal grid and sees the entire engine. Uncover the hidden structures that standard metrics overlook, and learn how to package non-traditional, offline skills into high-yield assets using the iKgwebo engine.]]></description>
+    </item>
+
+    <item>
+      <title>Mission 004: The Sovereign Node — Ownership of Intel</title>
+      <link>https://www.ithuvia.com/blog/may.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/may.html</guid>
+      <pubDate>Fri, 01 May 2026 09:00:00 +0200</pubDate>
+      <description><![CDATA[The cloud is a lease; local weights are ownership. Stop leasing your intelligence. Learn why running local, offline LLMs is the ultimate tactical advantage for the sovereign professional to protect business logic, secure private repositories, and build contextual intelligence infrastructure.]]></description>
+    </item>
 
     <item>
       <title>Mission 003: Proof of Work — The Resume is Dead</title>
