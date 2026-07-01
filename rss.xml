@@ -5,7 +5,7 @@
     <link>https://www.ithuvia.com/blog/</link>
     <description>Mission Control for student founders. Tactical AI workflows, side-hustle blueprints, and the 2026 Sovereign Protocol.</description>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 09:00:00 +0200</lastBuildDate>
     <generator>Static RSS for GitHub Pages (Ithuvia-Sovereign-Engine)</generator>
     <atom:link href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -14,6 +14,14 @@
       <title>Ithuvia | Inside Intel</title>
       <link>https://www.ithuvia.com/blog/</link>
     </image>
+
+    <item>
+      <title>Mission 006: The Autonomous Ledger — Bypassing Legacy Financial Rails</title>
+      <link>https://www.ithuvia.com/blog/july.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/july.html</guid>
+      <pubDate>Wed, 01 Jul 2026 09:00:00 +0200</pubDate>
+      <description><![CDATA[Value capture cannot stall while waiting for bureaucratic consensus. Moving micro-transactions off complex legacy infrastructure. Learn how to deploy lightweight local validation protocols to handle uncompromised value capture completely detached from central points of failure.]]></description>
+    </item>
 
     <item>
       <title>Mission 005: The Ghost Economy — Value Chains Beyond the Grid</title>
