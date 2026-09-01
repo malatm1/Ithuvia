@@ -5,7 +5,7 @@
     <link>https://www.ithuvia.com/blog/</link>
     <description>Mission Control for student founders. Tactical AI workflows, side-hustle blueprints, and the 2026 Sovereign Protocol.</description>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 01 Jul 2026 09:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 10:53:35 +0200</lastBuildDate>
     <generator>Static RSS for GitHub Pages (Ithuvia-Sovereign-Engine)</generator>
     <atom:link href="https://www.ithuvia.com/rss.xml" rel="self" type="application/rss+xml" />
 
@@ -14,6 +14,22 @@
       <title>Ithuvia | Inside Intel</title>
       <link>https://www.ithuvia.com/blog/</link>
     </image>
+
+    <item>
+      <title>Mission 008: The Algorithmic Apprentice — Scaling Beyond the Founder</title>
+      <link>https://www.ithuvia.com/blog/september.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/september.html</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0200</pubDate>
+      <description><![CDATA[The greatest threat to a sovereign creator is the capacity ceiling. Deploy digital apprentices to mitigate skills gaps in informal economies and automate your local value chains beyond the capacity of a single operator.]]></description>
+    </item>
+
+    <item>
+      <title>Mission 007: The Resilient Router — Surviving Network Failure</title>
+      <link>https://www.ithuvia.com/blog/august.html</link>
+      <guid isPermaLink="true">https://www.ithuvia.com/blog/august.html</guid>
+      <pubDate>Sat, 01 Aug 2026 09:00:00 +0200</pubDate>
+      <description><![CDATA[A digital strategy entirely dependent on uninterrupted broadband is a vulnerability. Surviving infrastructure failure and physical line drops requires building an adaptive fallback architecture. Learn how to configure your digital environment for offline survival and seamless local execution when the baseline network drops.]]></description>
+    </item>
 
     <item>
       <title>Mission 006: The Autonomous Ledger — Bypassing Legacy Financial Rails</title>
